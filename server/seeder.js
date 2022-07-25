@@ -61,4 +61,4 @@ const deleteOrders = async () => {
 
 // deleteUsers();
 // deleteOrders();
-insertProducts();
+// insertProducts();

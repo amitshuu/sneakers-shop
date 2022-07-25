@@ -6,13 +6,11 @@ import { ClickAwayListener } from '@mui/material';
 import { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCTS_BY_TITLE } from '../graphql/Queries/productQueries';
-import { mobile } from '../responsive';
-import { useSelector } from 'react-redux';
 const SearchBar = ({ display }) => {
   const [searchValue, setSearchValue] = useState('');
   const [filteredData, setFilteredData] = useState([]);
 
-  const { data: searchData, loading } = useQuery(GET_PRODUCTS_BY_TITLE, {
+  const { data: searchData } = useQuery(GET_PRODUCTS_BY_TITLE, {
     variables: { searchQuery: searchValue },
     skip: !searchValue,
   });

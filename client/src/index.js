@@ -15,7 +15,7 @@ import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter } from 'react-router-dom';
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:5000/graphql',
+  uri: '/graphql',
 });
 
 const authLink = setContext(() => {

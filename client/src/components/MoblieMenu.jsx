@@ -14,6 +14,7 @@ const MoblieMenu = () => {
   const { userInfo } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
+  // eslint-disable-next-line
   const display = new Boolean();
 
   return (

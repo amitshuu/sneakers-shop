@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCTS } from '../graphql/Queries/productQueries';
 import { addColor } from '../features/filterSlice';
@@ -11,9 +11,6 @@ const ColorChart = () => {
   const dispatch = useDispatch();
   const { data } = useQuery(GET_PRODUCTS);
   const { menuState, handleToggle } = useToggle();
-  const filters = useSelector((state) => state.filter);
-
-  const { color: filterColor } = filters;
 
   const shoeColors = new Set(
     data?.getProducts.reduce((res, { color }) => [...res, ...color], [])

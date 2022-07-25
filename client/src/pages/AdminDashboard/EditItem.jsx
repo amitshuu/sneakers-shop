@@ -1,5 +1,5 @@
 import { useLazyQuery } from '@apollo/client';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import MuiError from '../../assets/mui/Alert';
 import { FormRow } from '../../components';
@@ -20,15 +20,12 @@ const EditItem = () => {
     initialState
   );
 
-  const [getProduct, { loading, error, data }] = useLazyQuery(
-    GET_PRODUCT_BY_ID,
-    {
-      onCompleted({ getProductById }) {
-        values.product = getProductById;
-        values.errors = '';
-      },
-    }
-  );
+  const [getProduct, { loading, error }] = useLazyQuery(GET_PRODUCT_BY_ID, {
+    onCompleted({ getProductById }) {
+      values.product = getProductById;
+      values.errors = '';
+    },
+  });
 
   function getProductFunction() {
     getProduct({ variables: { productId: values.productId } });

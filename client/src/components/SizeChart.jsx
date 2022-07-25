@@ -5,7 +5,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import { useDispatch, useSelector } from 'react-redux';
 import { addSize } from '../features/filterSlice';
 import { useToggle } from '../utils/customHooks';
-import { mobile } from '../responsive';
+
 const SizeChart = () => {
   const filters = useSelector((state) => state.filter);
   const { menuState, handleToggle } = useToggle();

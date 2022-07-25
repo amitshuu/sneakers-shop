@@ -1,11 +1,12 @@
 import { UserInputError } from 'apollo-server-express';
 import User from '../../models/User.js';
-import jwt from 'jsonwebtoken';
 import { auth } from '../../utils/auth.js';
+
 import {
   loginInputValidator,
   registerInputValidator,
 } from '../../utils/vaildators.js';
+
 export const users = {
   Query: {
     getUserById: async (_, {}, context) => {

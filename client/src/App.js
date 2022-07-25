@@ -1,7 +1,12 @@
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import jwtDecode from 'jwt-decode';
+import { useQuery } from '@apollo/client';
 
 import {
   CartPage,
+  ErrorPage,
   HomePage,
   LoginPage,
   OrderPage,
@@ -10,27 +15,24 @@ import {
   ShopPage,
 } from './pages';
 
+import { ProtectedProfileRoute, ProtectedRoute, Footer } from './components';
 import MobileMenu from './components/MoblieMenu';
 
-import { ProtectedProfileRoute, ProtectedRoute, Footer } from './components';
 import {
   MainLayout,
   UserProfile,
   UserShipping,
   PurchaseHistory,
 } from './pages/UserDashboard';
+
 import { AdminLayout, EditItem, NewItem } from './pages/AdminDashboard';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from './features/userSlice';
 import { GET_USER_DETAILS } from './graphql/Queries/userQueries';
-import { useQuery } from '@apollo/client';
 import ProtectedAdminRoute from './components/ProtectedAdminRoute';
-import jwtDecode from 'jwt-decode';
 import { useLogout } from './utils/customHooks';
 
 const App = () => {
-  const { userInfo } = useSelector((state) => state.user); // JWT details
+  const { userInfo } = useSelector((state) => state.user);
   const { data, loading } = useQuery(GET_USER_DETAILS, {
     skip: !userInfo,
   });
@@ -61,6 +63,7 @@ const App = () => {
         <Route path='/shop' element={<ShopPage />} />
         <Route path='/shop/:id' element={<ProductPage />} />
         <Route path='/cart' element={<CartPage />} />
+        <Route path='*' element={<ErrorPage />} />
         <Route
           path='/login'
           element={

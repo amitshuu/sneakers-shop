@@ -1,5 +1,4 @@
 import Product from '../../models/Product.js';
-import Order from '../../models/Order.js';
 import { UserInputError } from 'apollo-server';
 import { auth } from '../../utils/auth.js';
 

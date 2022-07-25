@@ -19,6 +19,7 @@ const Navbar = () => {
     skip: !userInfo,
   });
 
+  // eslint-disable-next-line
   const display = new Boolean();
 
   const dispatch = useDispatch();

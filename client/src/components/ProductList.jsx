@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { GridView, ListView } from '../components';
-import styled from 'styled-components';
 
 const ProductList = ({ data, filteredProducts }) => {
   const { gridView } = useSelector((state) => state.filter);
@@ -18,9 +17,3 @@ const ProductList = ({ data, filteredProducts }) => {
 };
 
 export default ProductList;
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-`;

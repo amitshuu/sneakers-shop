@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { About, Header, MoblieMenu, Navbar, TopPicks } from '../components';
+import React from 'react';
+import { About, Header, Navbar, TopPicks } from '../components';
 
 const HomePage = () => {
   return (
