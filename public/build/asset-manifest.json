@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.948c9dd8.css",
+    "main.js": "/static/js/main.01c4e725.js",
+    "static/media/nike_jordan_4_university_blue.png": "/static/media/nike_jordan_4_university_blue.c4215a3c1de98c1f1cec.png",
+    "static/media/nike_jordan_1_travis_mocha_high.png": "/static/media/nike_jordan_1_travis_mocha_high.749b9361f381e3fcee6c.png",
+    "static/media/nike_off---white_dunk_low_lot_45.png": "/static/media/nike_off---white_dunk_low_lot_45.b27aac47bf4ed843cb0f.png",
+    "static/media/adidas_yeezy_700_wave_runner.png": "/static/media/adidas_yeezy_700_wave_runner.2d41fb59fe653ab6cd0e.png",
+    "static/media/adidas_yeezy_350_zebra.png": "/static/media/adidas_yeezy_350_zebra.52a9660b173c47cd757f.png",
+    "static/media/adidas_yeezy_700_mauve.png": "/static/media/adidas_yeezy_700_mauve.c1e87d7245591a095e3b.png",
+    "static/media/adidas_yeezy_slides_core.png": "/static/media/adidas_yeezy_slides_core.54739d62c0bd9531727a.png",
+    "static/media/yeezy.svg": "/static/media/yeezy.982ef2758e98196f8416690d469a52d7.svg",
+    "index.html": "/index.html",
+    "main.948c9dd8.css.map": "/static/css/main.948c9dd8.css.map",
+    "main.01c4e725.js.map": "/static/js/main.01c4e725.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.948c9dd8.css",
+    "static/js/main.01c4e725.js"
+  ]
+}
