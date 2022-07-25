@@ -25,7 +25,7 @@ const UserMenu = () => {
   return (
     <div>
       <Button
-        sx={{ color: 'green' }}
+        sx={{ color: 'var(--clr-mocha)' }}
         id='basic-button'
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup='true'
