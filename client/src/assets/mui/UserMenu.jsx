@@ -45,7 +45,7 @@ const UserMenu = () => {
         }}
       >
         <Link to='/profile'>
-          <MenuItem onClick={handleClose}>Profilee</MenuItem>
+          <MenuItem onClick={handleClose}>Profileee</MenuItem>
         </Link>
         {userInfo.isAdmin && (
           <Link to='/new-item'>
