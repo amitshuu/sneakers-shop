@@ -30,7 +30,7 @@ const Navbar = () => {
       <LinkContainer>
         <NavLink>
           <Link className='link' to='/'>
-            Homee
+            Homeee
           </Link>
         </NavLink>
         <NavLink>
