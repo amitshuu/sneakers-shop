@@ -66,35 +66,6 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Tag = styled.div`
-  display: flex;
-  height: 25px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  align-items: center;
-  background-color: white;
-  border-radius: 8px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  color: var(--clr-gray);
-  font-size: 14px;
-
-  .icon {
-    font-size: 12px;
-    background: none;
-    outline: none;
-    color: var(--clr-gray);
-    border: none;
-    display: flex;
-    margin-left: 10px;
-    transition: all 0.3s;
-    cursor: pointer;
-    &:hover {
-      color: red;
-    }
-  }
-`;
-
 const ClearAll = styled.button`
   display: flex;
   color: var(--clr-gray);

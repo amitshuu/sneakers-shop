@@ -1,5 +1,5 @@
 import Pagination from '@mui/material/Pagination';
-import React, { useState } from 'react';
+import React from 'react';
 import Stack from '@mui/material/Stack';
 
 export const PaginationMUI = ({ page, getPage, numOfPages }) => {

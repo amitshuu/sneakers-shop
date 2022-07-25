@@ -3,7 +3,7 @@ import Slider from '@mui/material/Slider';
 import React from 'react';
 export const PriceSlider = ({ value, onChangeCommitted, onChange }) => {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', color: '#e45d5d' }}>
       <Slider
         value={value}
         min={199}

@@ -17,7 +17,6 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '25%',
-
   bgcolor: 'background.paper',
   borderRadius: '0.25rem',
   boxShadow: 24,
@@ -54,7 +53,9 @@ export const PasswordModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Reset password</Button>
+      <Button onClick={handleOpen} sx={{ color: 'var(--clr-mocha)' }}>
+        Reset password
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

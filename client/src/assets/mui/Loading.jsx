@@ -8,6 +8,7 @@ export default function Loading(widthProp) {
       sx={{
         display: 'flex',
         justifyContent: 'center',
+        color: 'var(--clr-mocha)',
         alignItems: 'center',
         width: '100%' || widthProp,
       }}
