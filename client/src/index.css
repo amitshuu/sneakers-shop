@@ -1,0 +1,106 @@
+:root {
+  --bgc-main: #f5efec;
+  --clr-border: #e8e6e5;
+  --clr-light-gray: #c5c4c4;
+  --clr-gray: #949291;
+  --clr-gray-2: #454341;
+  --clr-gray-3: #e8e6e4;
+  --clr-gray-4: #7a7877;
+  --clr-red: #e45d5d;
+  --clr-mocha: #584e44;
+  --clr-mocha-2: #716252;
+  --clr-mocha-3: #8c7a66;
+  --clr-mocha-4: #c0ac95;
+  --clr-mocha-5: #e5d8c9;
+  --clr-mocha-hover: rgba(63, 30, 2, 0.068);
+  --clr-primary: #3f3f3f;
+  --clr-primary-2: #2e2d2d;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bgc-main);
+  margin: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.section-center {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.css-106c1u2-MuiBadge-badge {
+  background-color: var(--clr-mocha) !important;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  color: var(--clr-mocha-2) !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(63, 30, 2, 0.068) !important;
+}
+
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--clr-mocha-2) !important;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: black !important;
+}
+.css-187mznn-MuiSlider-root {
+  color: #e45d5d !important;
+}
+.css-eg0mwd-MuiSlider-thumb {
+  height: 1.5vh !important;
+  width: 4% !important;
+  border-radius: 100% !important;
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: var(--clr-mocha-2) !important;
+  color: white;
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
+  background-color: var(--clr-mocha-3) !important;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--clr-mocha-2) !important;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  box-shadow: none !important;
+}
+.hr {
+  margin-top: 3rem;
+  width: 100%;
+  border: 2px solid var(--clr-border);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.size-select {
+  background-color: red !important;
+}
+
+.css-18lrjg1-MuiCircularProgress-root {
+  color: var(--clr-mocha-3) !important;
+}
