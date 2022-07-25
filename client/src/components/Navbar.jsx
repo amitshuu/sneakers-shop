@@ -30,7 +30,7 @@ const Navbar = () => {
       <LinkContainer>
         <NavLink>
           <Link className='link' to='/'>
-            Homee
+            Home
           </Link>
         </NavLink>
         <NavLink>
@@ -65,7 +65,6 @@ const Navbar = () => {
                 sx={{ color: 'var(--clr-mocha)' }}
                 style={{ paddingRight: '10px', marginTop: '3px' }}
                 badgeContent={data?.getUserCart.cartProducts.length || 0}
-                color='primary'
               >
                 <Icon>
                   <ShoppingCartOutlinedIcon style={{ color: 'black' }} />
