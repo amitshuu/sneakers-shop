@@ -1,4 +1,4 @@
-# Sneakers-Shop App
+# Sneakers Shop App
 > E-Commerce App built with the MERN stack.
 
 This is a sample application that demonstrates an E-commerce website using the MEAN stack.
