@@ -77,6 +77,15 @@ a:active {
   color: white;
 }
 
+.MuiButton-root-MuiButton-text-MuiButton-textPrimary-MuiButton-sizeMedium-MuiButton-textSizeMedium-MuiButtonBase-root
+  css-1ujsas3 {
+  color: red !important;
+}
+
+.MuiButton-root-MuiButton-text-MuiButton-textPrimary-MuiButton-sizeMedium-MuiButton-textSizeMedium-MuiButtonBase-root-css-1ujsas3 {
+  color: red !important;
+}
+
 .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
   background-color: var(--clr-mocha-3) !important;
 }
