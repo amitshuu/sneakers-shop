@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Wrapper>
       <Container>
-        <Title>Buy A New Shoess!</Title>
+        <Title>Buy A New Shoes</Title>
         <Info>
           Take the time to be sure the shoes you buy are <br />
           right for your feet
