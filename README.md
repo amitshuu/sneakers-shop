@@ -42,6 +42,7 @@ Link: https://sneakershop-app.herokuapp.com/
 - Sign in \ Register \ Sign out
 - User authentication with jsonwebtoken
 - Update profile info
+- Reset password option
 - Update shipping info
 - Filter products by price\color\brand\size
 - Sort produdcts by top rated\lowest price\highest price
