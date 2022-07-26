@@ -9,11 +9,16 @@ import path from 'path';
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
+// app.use(express.static('public'));
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+// });
 const apolloServer = new ApolloServer({
   typeDefs,
   resolvers,
