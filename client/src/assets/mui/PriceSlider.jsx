@@ -5,6 +5,7 @@ export const PriceSlider = ({ value, onChangeCommitted, onChange }) => {
   return (
     <Box sx={{ width: '100%', color: '#e45d5d' }}>
       <Slider
+        sx={{ color: '#e45d5d' }}
         value={value}
         min={199}
         max={1000}
