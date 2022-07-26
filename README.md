@@ -31,6 +31,7 @@ Users can choose exactly which product they want with helpful filtering function
 - Material UI
 ### Server - 
 - Node.js
+- Express
 - GraphQL 
 - MongoDB
 
