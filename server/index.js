@@ -13,12 +13,14 @@ const app = express();
 
 const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, '/client/build')));
+// app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static('build'));
 
-app.get('*', (req, res) =>
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-);
+// app.get('*', (req, res) =>
+//   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+// );
 
+app.get('*', (req, res) => res.sendFile(path.resolve('index.html')));
 const apolloServer = new ApolloServer({
   typeDefs,
   resolvers,
