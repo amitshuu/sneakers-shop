@@ -8,7 +8,7 @@ import connectDB from './db/connect.js';
 import path from 'path';
 
 const app = express();
-
+const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/', function (req, res) {
