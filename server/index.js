@@ -11,7 +11,8 @@ const app = express();
 
 const __dirname = path.resolve();
 
-app.use(express.static('/client/build'));
+// app.use(express.static('/client/build'));
+app.use('/static', express.static(path.join(__dirname, '/client/build')));
 
 app.get('*', function (req, res) {
   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
