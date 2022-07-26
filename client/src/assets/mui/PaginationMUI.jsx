@@ -7,17 +7,10 @@ export const PaginationMUI = ({ page, getPage, numOfPages }) => {
     getPage(+value);
   };
 
-  const paginationStyle = {
-    color: 'var(--clr-mocha-2)',
-    '&:hover': {
-      color: 'var(--clr-mocha-3)',
-    },
-  };
-
   return (
     <Stack spacing={2}>
       <Pagination
-        sx={paginationStyle}
+        sx={{ color: 'var(--clr-mocha-2)' }}
         count={numOfPages}
         page={page}
         onChange={handleChange}
