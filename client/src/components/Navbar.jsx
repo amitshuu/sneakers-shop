@@ -35,7 +35,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink>
           <Link className='link' to='/shop'>
-            Shopp
+            Shop
           </Link>
         </NavLink>
       </LinkContainer>
