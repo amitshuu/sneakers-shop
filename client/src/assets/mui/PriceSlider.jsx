@@ -7,9 +7,8 @@ export const PriceSlider = ({ value, onChangeCommitted, onChange }) => {
       <Slider
         sx={{
           color: '#e45d5d',
-          height: '1.5vh',
-          width: '4%',
-          borderRadius: '100%',
+          height: '0.5vh',
+          width: '100%',
         }}
         value={value}
         min={199}

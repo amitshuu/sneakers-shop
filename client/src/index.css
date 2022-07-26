@@ -44,9 +44,9 @@ a:active {
   color: black;
 }
 
-.css-106c1u2-MuiBadge-badge {
+/* .css-106c1u2-MuiBadge-badge {
   background-color: var(--clr-mocha) !important;
-}
+} */
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
   color: var(--clr-mocha-2) !important;
 }
@@ -66,20 +66,20 @@ a:active {
 .css-187mznn-MuiSlider-root {
   color: #e45d5d !important;
 }
-.css-eg0mwd-MuiSlider-thumb {
+/* .css-eg0mwd-MuiSlider-thumb {
   height: 1.5vh !important;
   width: 4% !important;
   border-radius: 100% !important;
-}
+} */
 
-.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+/* .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background-color: var(--clr-mocha-2) !important;
   color: white;
-}
+} */
 
-.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
+/* .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
   background-color: var(--clr-mocha-3) !important;
-}
+} */
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused
   .MuiOutlinedInput-notchedOutline {
   border-color: var(--clr-mocha-2) !important;

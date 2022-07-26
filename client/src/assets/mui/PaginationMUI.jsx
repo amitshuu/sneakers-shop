@@ -8,13 +8,19 @@ export const PaginationMUI = ({ page, getPage, numOfPages }) => {
   };
 
   return (
-    <Stack spacing={2}>
-      <Pagination
-        sx={{ color: 'var(--clr-mocha-2)' }}
-        count={numOfPages}
-        page={page}
-        onChange={handleChange}
-      />
+    <Stack
+      spacing={2}
+      sx={{
+        '.MuiPaginationItem-root.Mui-selected': {
+          color: 'white',
+          backgroundColor: 'var(--clr-mocha-2)',
+          '&:hover': {
+            backgroundColor: 'var(--clr-mocha-3)',
+          },
+        },
+      }}
+    >
+      <Pagination count={numOfPages} page={page} onChange={handleChange} />
     </Stack>
   );
 };
