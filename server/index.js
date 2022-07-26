@@ -9,7 +9,7 @@ import path from 'path';
 
 const app = express();
 
-app.use(express.static('build'));
+app.use(express.static('/client/build'));
 
 app.get('*', function (req, res) {
   res.sendFile('index.html');
