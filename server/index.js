@@ -12,9 +12,11 @@ import { fileURLToPath } from 'url';
 const app = express();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+
+app.use(express.static(path.resolve(__dirname, './client/build')));
+
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
 });
 
 const apolloServer = new ApolloServer({
