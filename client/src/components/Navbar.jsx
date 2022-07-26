@@ -62,7 +62,8 @@ const Navbar = () => {
           <UserLinks>
             <Link to='/cart' style={{ color: 'var(--clr-mocha-2)' }}>
               <Badge
-                sx={{ backgroundColor: 'var(--clr-mocha)' }}
+                sx={{ color: 'var(--clr-mocha)' }}
+                color='primary'
                 style={{ paddingRight: '10px', marginTop: '3px' }}
                 badgeContent={data?.getUserCart.cartProducts.length || 0}
               >
