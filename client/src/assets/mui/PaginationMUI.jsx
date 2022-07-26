@@ -18,6 +18,12 @@ export const PaginationMUI = ({ page, getPage, numOfPages }) => {
             backgroundColor: 'var(--clr-mocha-3)',
           },
         },
+        '.MuiPaginationItem-root': {
+          '&:hover': {
+            backgroundColor: 'var(--clr-mocha-3)',
+            color: 'white',
+          },
+        },
       }}
     >
       <Pagination count={numOfPages} page={page} onChange={handleChange} />
