@@ -5,10 +5,11 @@ import { typeDefs } from './graphql/typeDefs.js';
 import resolvers from './graphql/resolvers/index.js';
 import connectDB from './db/connect.js';
 
-import path from 'path';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
-const __dirname = path.resolve();
+const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('/', function (req, res) {
