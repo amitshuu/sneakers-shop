@@ -5,6 +5,7 @@ This is a sample application that demonstrates an E-commerce website using the M
 The application loads products a MongoDB database and displays them.
 Users can add products to their cart, purchase products and even rate them!
 Users can choose exactly which product they want with helpful filtering functionality.
+Link: https://sneakershop-app.herokuapp.com/
 
 ## Home page
 ![screenshot](https://github.com/amitshuu/sneakers-shop/blob/master/uploads/home_page.png)
