@@ -13,6 +13,15 @@ import {
 } from '@apollo/client';
 import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter } from 'react-router-dom';
+import { createTheme, ThemeProvider } from '@mui/material';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#584e44',
+    },
+  },
+});
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -47,7 +56,9 @@ root.render(
     <Provider store={store}>
       <BrowserRouter>
         <ScrollToTop />
-        <App />
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
       </BrowserRouter>
     </Provider>
   </ApolloProvider>
