@@ -11,18 +11,11 @@ import { fileURLToPath } from 'url';
 
 const app = express();
 
-app.use(express.static('app/client/build'));
-app.get('*', function (req, res) {
-  res.sendFile(path.resolve(__dirname, 'app/client/build', 'index.html'));
-});
-// app.use(express.static(path.join(__dirname, '/client/build')));
-// app.use(express.static('build'));
+app.use(express.static('build'));
 
-// app.get('*', (req, res) =>
-//   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-// );
-
-// app.get('*', (req, res) => res.sendFile(path.resolve('index.html')));
+app.get('*', (req, res) =>
+  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+);
 const apolloServer = new ApolloServer({
   typeDefs,
   resolvers,
