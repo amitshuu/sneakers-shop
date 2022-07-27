@@ -8,11 +8,19 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { toggleMobileMenu } from '../features/filterSlice';
 import { Logo, SearchBar } from './';
 import { Link } from 'react-router-dom';
+import { useLogout } from '../utils/customHooks';
 
 const MoblieMenu = () => {
   const { mobileMenu } = useSelector((state) => state.filter);
   const { userInfo } = useSelector((state) => state.user);
   const dispatch = useDispatch();
+
+  const { handleLogout } = useLogout();
+
+  const logoutHandler = () => {
+    handleLogout();
+    dispatch(toggleMobileMenu());
+  };
 
   // eslint-disable-next-line
   const display = new Boolean();
@@ -63,16 +71,29 @@ const MoblieMenu = () => {
             )}
           </LinksContainer>
           <UserLinks>
-            <MenuLink>
-              <Link
-                onClick={() => dispatch(toggleMobileMenu())}
-                to='/login'
-                style={{ color: 'var(--clr-primary-2)' }}
-              >
-                <PersonOutlineOutlinedIcon />
-                Sign in
-              </Link>
-            </MenuLink>
+            {userInfo ? (
+              <MenuLink>
+                <Link
+                  onClick={logoutHandler}
+                  to='/'
+                  style={{ color: 'var(--clr-primary-2)' }}
+                >
+                  <PersonOutlineOutlinedIcon />
+                  Sign Out
+                </Link>
+              </MenuLink>
+            ) : (
+              <MenuLink>
+                <Link
+                  onClick={() => dispatch(toggleMobileMenu())}
+                  to='/login'
+                  style={{ color: 'var(--clr-primary-2)' }}
+                >
+                  <PersonOutlineOutlinedIcon />
+                  Sign in
+                </Link>
+              </MenuLink>
+            )}
             {userInfo && (
               <MenuLink>
                 <Link
