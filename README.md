@@ -38,6 +38,8 @@ Link: https://sneakershop-app.herokuapp.com/
 
 # Features
 
+- Fully responsive for mobiles
+
 ### User -
 - Sign in \ Register \ Sign out
 - User authentication with jsonwebtoken
