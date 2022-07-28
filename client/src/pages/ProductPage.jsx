@@ -174,7 +174,9 @@ const ProductPage = () => {
 
 export default ProductPage;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  height: 105vh;
+`;
 const ProductContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
