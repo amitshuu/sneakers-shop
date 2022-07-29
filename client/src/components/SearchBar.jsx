@@ -7,8 +7,8 @@ import { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCTS_BY_TITLE } from '../graphql/Queries/productQueries';
 const SearchBar = ({ display }) => {
-  const [searchValue, setSearchValue] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
 
   const { data: searchData } = useQuery(GET_PRODUCTS_BY_TITLE, {
     variables: { searchQuery: searchValue },

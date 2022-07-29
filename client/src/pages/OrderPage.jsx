@@ -115,7 +115,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
 `;
 
 const Container = styled.div`
