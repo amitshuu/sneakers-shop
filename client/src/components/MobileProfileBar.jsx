@@ -7,9 +7,14 @@ const MobileProfileBar = () => {
     <Wrapper>
       <ProfileBar>
         {sidebarLinks.map((links) => {
-          const { name, path, id } = links;
+          const { name, path, id, handler } = links;
           return (
-            <NavLink className='nav_link' key={id} to={path}>
+            <NavLink
+              className='nav_link'
+              key={id}
+              to={path}
+              onClick={() => handler && handleLogout()}
+            >
               {name}
             </NavLink>
           );
