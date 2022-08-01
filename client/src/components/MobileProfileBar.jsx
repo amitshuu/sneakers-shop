@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useLogout } from '../utils/customHooks';
+
 import styled from 'styled-components';
 import { sidebarLinks } from '../utils/constants';
 const MobileProfileBar = () => {
+  const { handleLogout } = useLogout();
   return (
     <Wrapper>
       <ProfileBar>
