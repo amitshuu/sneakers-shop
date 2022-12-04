@@ -1,6 +1,6 @@
 [build]
-  command = "CI='' npm run build"
-  publish = "/build"
+  command = "CI='' npm run build-client"
+  publish = "/client/build"
   base ="/"
 
 [[redirects]]
